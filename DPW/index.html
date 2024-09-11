@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio</title>
+
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-title">
+          <img
+            src="https://avatars.githubusercontent.com/u/52640561?v=4"
+            alt="logo"
+            class="logo logo-rounded"
+            width="50"
+          />
+          <span class="title">KatowProject</span>
+        </div>
+        <div class="hamburger">&#9776;</div>
+
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="jumbotron">
+        <h1>Welcome to KatowProject</h1>
+        <p>Your one-stop solution for all your project needs.</p>
+        <a href="about.html" class="btn">Learn More</a>
+      </div>
+
+      <div id="content">
+        <article>t</article>
+        <article>t</article>
+      </div>
+
+      <aside>test</aside>
+    </main>
+
+    <footer>res</footer>
+
+    <script>
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-list").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
