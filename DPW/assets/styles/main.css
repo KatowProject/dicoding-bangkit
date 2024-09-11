@@ -74,9 +74,8 @@ nav a:hover {
 
 .jumbotron {
   background-color: #f8f9fa; /* Light grey background */
-  padding: 2rem 1rem; /* Padding for spacing */
+  padding: 1rem 1rem; /* Padding for spacing */
   text-align: center; /* Center align text */
-  margin-bottom: 2rem; /* Space below the jumbotron */
 }
 
 .jumbotron h1 {
@@ -102,6 +101,44 @@ nav a:hover {
 
 .jumbotron .btn:hover {
   background-color: #0056b3; /* Darker blue on hover */
+}
+
+main {
+    gap: 1.5rem;
+    width: 100vw;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    width: 100vw;
+    gap: 1rem;
+
+    flex: 3;
+}
+
+#content {
+    flex: 3;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+    order: 1;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-wrap: wrap;
+    
+
+
+    padding: 20px;
 }
 
 @media (max-width: 768px) {
