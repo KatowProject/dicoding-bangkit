@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -20,8 +24,9 @@ h6,
 p,
 a,
 span,
+li,
 img {
-  animation: flicker 2s infinite alternate;
+  animation: flicker 2.5s infinite alternate;
 }
 
 header {
@@ -147,8 +152,6 @@ main {
 
   display: flex;
   flex-flow: column nowrap;
-
-  gap: 1rem 2rem;
 }
 
 aside {
@@ -161,7 +164,7 @@ aside {
   border: 2px solid whitesmoke;
   border-radius: 10px;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -242,11 +245,6 @@ aside {
 }
 
 footer {
-  padding: 1px;
-  color: #e2e2b6;
-  background-color: #03346e;
-
-  text-align: center;
   font-weight: bold;
   bottom: 0;
 }
@@ -254,6 +252,40 @@ footer {
 .footer-content {
   text-align: center;
   padding: 20px;
+  background-color: #03346e;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgb(8, 59, 126);
+  border-radius: 4px;
+  padding: 8px;
+  transition: background-color 0.3s;
+}
+
+.skill:hover {
+  background-color: rgb(8, 59, 126);
+}
+
+.skill-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.skill span {
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .socials {
@@ -279,6 +311,21 @@ footer {
   text-decoration: none;
   font-size: 16px;
   color: #e2e2b6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px; /* Add some space between the icon and the text */
+}
+
+.social-icon span {
+  display: block;
+  font-size: 12px;
+  color: #03346e;
 }
 
 /* alignment */
@@ -290,6 +337,20 @@ footer {
   display: flex;
 
   margin-top: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-about {
+  width: 200px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -392,12 +453,4 @@ footer {
   54% {
     opacity: 0.8;
   }
-}
-
-.flicker-text {
-  animation: flicker 1.5s infinite alternate;
-  color: #e2e2b6; /* Text color */
-  font-size: 2rem; /* Adjust as needed */
-  text-align: center; /* Center the text */
-  margin: 20px 0; /* Adjust as needed */
 }
