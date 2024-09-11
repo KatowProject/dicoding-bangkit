@@ -1,77 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portofolio</title>
 
-    <link rel="stylesheet" href="./assets/styles/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo-title">
-          <img
-            src="https://avatars.githubusercontent.com/u/52640561?v=4"
-            alt="logo"
-            class="logo logo-rounded"
-            width="50"
-          />
-          <span class="title">KatowProject</span>
-        </div>
-        <div class="hamburger">&#9776;</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portofolio</title>
 
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <link rel="stylesheet" href="./assets/styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet" />
+</head>
 
-    <main>
-      <div class="jumbotron">
-        <h1>Welcome to KatowProject</h1>
-        <p>Your one-stop solution for all your project needs.</p>
-        <a href="about.html" class="btn">Learn More</a>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo-title">
+        <img src="https://avatars.githubusercontent.com/u/52640561?v=4" alt="logo" class="logo logo-rounded"
+          width="50" />
+        <span class="title">KatowProject</span>
       </div>
+      <div class="hamburger">&#9776;</div>
 
-      <div class="container">
-          <aside>
-            <article class="card">
-                test
-            </article>
-          </aside>
-          
-          <div id="content">
-              <article class="card">lorem</article>
-              <article class="card">t</article>
-              <article class="card">t</article>
-              <article class="card">t</article>
-              <article class="card">t</article>
-              <article class="card">t</article>
-              <article class="card">t</article>
-              <article class="card">t</article>
-              <article class="card">t</article>
-              <article class="card">t</article>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="jumbotron">
+      <h1 id="jumbotron-title">Welcome to My Website</h1>
+      <p id="jumbotron-description">Experience the best of my work</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </div>
+
+    <div class="container">
+      <aside>
+        <article class="card aside-content">
+          <h2>About Me</h2>
+          <hr />
+          <div class="about-me">
+            <img src="https://avatars.githubusercontent.com/u/52640561?v=4" alt="My Name" class="about-me-img" />
+            <div class="about-me-text">
+              <p><strong>Name:</strong> Your Name</p>
+              <p><strong>Profession:</strong> Web Developer</p>
+              <p>
+                <strong>Bio:</strong> I am a passionate web developer with
+                experience in creating dynamic and responsive websites. I love
+                coding and enjoy learning new technologies.
+              </p>
+
+              <strong>Language</strong>
+              <div class="badges">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+              </div>
+            </div>
           </div>
+        </article>
+      </aside>
+
+      <div id="content">
+        <article class="card">
+          <h2>Projects</h2>
+          <hr />
+
+          <div class="projects">
+            <div class="project">
+              <img src="https://via.placeholder.com/150" alt="Project 1" class="project-img" />
+              <div class="project-text">
+                <h3>Project 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptates.
+                </p>
+                <a href="#" class="btn btn-block">View Project</a>
+              </div>
+            </div>
+
+            <div class="project">
+              <img src="https://via.placeholder.com/150" alt="Project 2" class="project-img" />
+              <div class="project-text">
+                <h3>Project 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptates.
+                </p>
+                <a href="#" class="btn btn-block">View Project</a>
+              </div>
+            </div>
+
+            <div class="project">
+              <img src="https://via.placeholder.com/150" alt="Project 3" class="project-img" />
+              <div class="project-text">
+                <h3>Project 3</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptates.
+                </p>
+                <a href="#" class="btn btn-block">View Project</a>
+              </div>
+            </div>
+
+            <div class="project">
+              <img src="https://via.placeholder.com/150" alt="Project 3" class="project-img" />
+              <div class="project-text">
+                <h3>Project 3</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptates.
+                </p>
+                <a href="#" class="btn btn-block">View Project</a>
+              </div>
+            </div>
+        </article>
       </div>
-    </main>
 
-    <footer>res</footer>
+    </div>
+  </main>
 
-    <script>
+  <footer class="footer-content">
+    <p>&copy; 2021 KatowProject</p>
+
+    <div class="socials">
+      <ul>
+        <li><a rel="noopener" href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><a rel="noopener" href="https://www.twitter.com" target="_blank">Twitter</a></li>
+        <li><a rel="noopener" href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a rel="noopener" href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
       document
         .querySelector(".hamburger")
         .addEventListener("click", function () {
           document.querySelector(".nav-list").classList.toggle("active");
         });
-    </script>
-  </body>
+
+      function typeEffect(element, speed, callback) {
+        const text = element.innerHTML;
+        element.innerHTML = "";
+        let i = 0;
+        const timer = setInterval(function () {
+          if (i < text.length) {
+            element.append(text.charAt(i));
+            i++;
+          } else {
+            clearInterval(timer);
+            if (callback) callback();
+          }
+        }, speed);
+      }
+
+      function addDots(element, interval) {
+        let dots = "";
+        const timer = setInterval(function () {
+          if (dots.length < 3) {
+            dots += ".";
+          } else {
+            dots = "";
+          }
+          element.innerHTML = element.innerHTML.replace(/\.*$/, dots);
+        }, interval);
+      }
+
+      const title = document.getElementById("jumbotron-title");
+      const description = document.getElementById("jumbotron-description");
+
+      typeEffect(title, 100);
+      setTimeout(() => {
+        typeEffect(description, 100, () => {
+          addDots(description, 500);
+        });
+      }, title.innerHTML.length * 100 + 500);
+    });
+  </script>
+</body>
+
 </html>
