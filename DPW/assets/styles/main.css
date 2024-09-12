@@ -225,13 +225,6 @@ aside {
   align-items: center;
 }
 
-.about-me-img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin-right: 1rem;
-}
-
 .about-me-text p {
   margin: 0.5rem 0;
 }
