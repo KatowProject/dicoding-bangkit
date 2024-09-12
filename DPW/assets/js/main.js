@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
         top: targetPosition,
         behavior: "smooth",
       });
+
+      document.querySelector(".nav-list").classList.remove("active");
     });
   });
 });
