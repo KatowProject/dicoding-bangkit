@@ -240,6 +240,13 @@ aside {
   color: #d4a373;
 }
 
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
 .img-about {
   width: 200px;
 
