@@ -38,7 +38,10 @@ function calculateTotalRevenue() {
 
 // TODO: selesaikan fungsi deleteOrder
 function deleteOrder(id) {
-  orders = orders.filter((order) => order.id !== id);
+  orders.splice(
+    orders.findIndex((order) => order.id === id),
+    1
+  );
 }
 
 export { orders, addOrder, updateOrderStatus, calculateTotalRevenue, deleteOrder };
