@@ -4,7 +4,7 @@ function fibonacci(n) {
 
     const prev = fibonacci(n - 1);
     const next = prev[prev.length - 1] + prev[prev.length - 2];
-    return [...prevFib, next];
+    return [...prev, next];
 }
 
 // Jangan hapus kode di bawah ini!
