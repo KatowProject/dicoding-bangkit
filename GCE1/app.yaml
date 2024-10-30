@@ -1,6 +1,5 @@
 runtime: python39
 service: web-profile
-api_version: 1
 
 handlers:
 - url: /
